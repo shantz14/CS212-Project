@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<!-- root element -->
+<html>
+
+    <head>
+        <!-- webpage title -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <title>
+            CS212 Project - Settings Page
+        </title>
+    </head>
+
+    <body>
+        <nav class="navBar">
+            <div class="navItem">
+                <a href="/alarms/">Alarms</a>
+            </div>
+            <div class="navItem">
+                <a href="/timers/index.html">Timers</a>
+            </div>
+            <div class="navItem">
+                <a href="/world/index.html">World Clock</a>
+            </div>
+            <div class="navItem">
+                <a href="/settings/index.html">Settings</a>
+            </div>
+        </nav>
+
+        <div class="settingsContainer">
+            <form>
+                <p>General</p>
+
+                <label for="timeSystem">System:</label>
+                <select class="timeSystem" id="timeSystem" name="timeSystem">
+                    <option value="standard">Standard Time</option>
+                    <option value="military">Military Time</option>
+                </select>
+
+                <br>
+
+                <label for="notifications">Notifications:</label>
+                <select class="notifications" id="notifications" name="notifications">
+                    <option value="on">On</option>
+                    <option value="off">Off</option>
+                </select>
+
+                <br>
+
+                <p>Alarms</p>
+
+                <label for="repeat">Repeat Alarms:</label>
+                <select class="repeat" id="repeat" name="repeat">
+                    <option value="on">On</option>
+                    <option value="off">Off</option>
+                </select>
+            </form>
+        </div>
+
+    </body>
+
+</html>
