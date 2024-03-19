@@ -6,6 +6,9 @@ body {
     "nav"
     "clock"
     ;
+	background-image: linear-gradient(#f1ff00, #1ecbe1);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
 
 nav {
@@ -35,6 +38,8 @@ nav {
     justify-content: center;
     flex-wrap: nowrap;
     transform: scale(2);
+	background-color: yellow;
+	border-radius: 50%;
 }
 
 .timerContainer {
@@ -50,14 +55,48 @@ nav {
     grid-row-gap: 20px;
 }
 
+input[type=number], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color; yellow;
+}
+
+input[type=button] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.setTimer{
+	align-items:center;
+	float: center;
+	background-color: blue;
+	padding: 20px;
+	border-radius: 4px;
+}
+
 .timer {
     grid-area: timer;
     height: 40px;
     display: flex;
     align-items: center;
+	font-size:50px;
     justify-content: center;
     flex-wrap: nowrap;
-    transform: scale(2);
+    transform: scale(1);
+	background-color: blue;
+	padding: 10px;
+	border-radius: 100px;
 }
 
 .hours {
@@ -82,4 +121,28 @@ nav {
 
 .reset {
     grid-area: reset;
+}
+
+.navBar{
+	background-color: yellow;
+	height: 20px;
+	font-size: large;
+	border-radius: 4px;
+}
+
+.navItem{
+	font-family: Noto Sans, sans-serif;
+}
+
+a:link{
+	color: #3900ff;
+	text-decoration: none; 
+}
+a:hover{
+	color:#1ecbe1;
+	text-decoration: underline;
+}
+a:visited{
+	color:red;
+
 }
