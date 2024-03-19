@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 
 <!-- root element -->
@@ -7,7 +8,7 @@
         <!-- webpage title -->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="stlye.css">
         <title>
             CS212 Project - Alarm Page
         </title>
@@ -16,16 +17,16 @@
     <body>
         <nav class="navBar">
             <div class="navItem">
-                <a href="/alarms/index.html">Alarms</a>
+                <a href="/alarms/index.html">ALARMS</a>
             </div>
             <div class="navItem">
-                <a href="/timers/index.html">Timers</a>
+                <a href="/timers/index.html">TIMERS</a>
             </div>
             <div class="navItem">
-                <a href="/world/index.html">World Clock</a>
+                <a href="/world/index.html">WORLD CLOCK</a>
             </div>
             <div class="navItem">
-                <a href="/settings/index.html">Settings</a>
+                <a href="/settings/index.html">SETTINGS</a>
             </div>
         </nav>
 
@@ -42,14 +43,15 @@
             <div class="digit">
                 <p>1</p>
             </div>
-            <div class="am-pm">
-                <p>pm</p>
+            <div class="tod">
+                <p>PM</p>
             </div>
         </div>
 
         <div class="alarmContainer">
             <form>
-                <label for="name">Name:</label>
+				<h2>Create Alarm:</h2>
+                <label class="name" for="name">Name:</label>
                     <input type="text" 
                         name="name" 
                         id="name" 
@@ -58,14 +60,19 @@
                 
                 <br>
 
-                <input class="hour" id="hour" type="number" value="0" max="12" min="1" />
-
-                <input class="minute" id="minute" type="number" value="0" max="59" min="0" />
-
-                <select class="am-pm" id="am-pm" name="profession" required>
-                    <option value="am">am</option>
-                    <option value="pm">pm</option>
-                </select>
+				<label class="hour" for="hour">Hour:</label>
+					<input id="hour" type="number" value="0" max="12" min="1" Hour: />
+				<br>
+				
+				<label class="minute" for="minute">Minute:</label>
+					<input id="minute" type="number" value="0" max="59" min="0" />
+				<br>
+				<label class="am-pm" for="am-pm">Time of Day:</label>			
+					<select id="am-pm" name="profession" required>
+						<option value="am">AM</option>
+						<option value="pm">PM</option>
+					</select>
+				<br>
 
                 <br>
 
@@ -76,5 +83,6 @@
         </div>
 
     </body>
+
 
 </html>
